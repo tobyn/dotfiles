@@ -1,0 +1,36 @@
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
+set nocompatible
+syntax on
+filetype plugin on
+
+set bs=2
+set laststatus=2 ruler
+set et ts=2 sts=2 sw=2
+set wrap linebreak
+set number
+set ai nosi nocin
+set scrolloff=10
+set wildignore=bower_components,node_modules,target
+
+let mapleader = ","
+
+
+" open tag under cursor in a new vertical split
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+
+let g:ctrlp_working_path_mode = 'ra'
+" show CtrlP
+nnoremap <Leader>o :CtrlP
+
+
+" html tag helpers
+" C-t = html -> <html></html>
+inoremap <C-t> diwa<pa></pa>F<i
+" C-n = html -> <html>\n</html>
+inoremap <C-n> diwa<pa></pa>O<Tab>
+
+
+au BufRead,BufNewFile *.py set ts=2 sw=2 sts=2 et

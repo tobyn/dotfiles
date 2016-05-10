@@ -1,0 +1,11 @@
+[user]
+	name = Tobyn Baugher
+	email = tobynb@gmail.com
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	pom = push origin master
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = input

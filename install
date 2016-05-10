@@ -1,0 +1,31 @@
+#!/bin/bash
+set -e
+
+dotfiles=$(cd $(dirname $0); pwd)
+
+rm -rf ~/.bashrc ~/.bash_profile ~/.bash_logout
+ln -sf $dotfiles/bashrc ~/.bashrc
+ln -sf $dotfiles/bash_profile ~/.bash_profile
+ln -sf $dotfiles/bash_logout ~/.bash_logout
+
+mkdir -p ~/.local/share
+rm -rf ~/.local/share/fonts
+ln -sf $dotfiles/fonts ~/.local/share/fonts
+
+rm -rf ~/.gitconfig ~/.gitignore
+ln -sf $dotfiles/gitconfig ~/.gitconfig
+ln -sf $dotfiles/gitignore ~/.gitignore
+
+mkdir -p ~/.config/i3
+rm -rf ~/.config/i3/config
+ln -sf $dotfiles/i3 ~/.config/i3/config
+
+rm -rf ~/.vim ~/.vimrc ~/.gvimrc
+ln -sf $dotfiles/vim ~/.vim
+ln -sf $dotfiles/vim/vimrc ~/.vimrc
+ln -sf $dotfiles/vim/gvimrc ~/.gvimrc
+
+rm -rf ~/.Xresources ~/.Xresources.d ~/.xsession
+ln -sf $dotfiles/Xresources ~/.Xresources
+ln -sf $dotfiles/Xresources.d ~/.Xresources.d
+ln -sf $dotfiles/xsession ~/.xsession

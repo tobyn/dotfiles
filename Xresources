@@ -1,0 +1,8 @@
+*customization:
+
+UXTerm*faceName: Source Code Pro
+UXTerm*faceSize: 11
+UXTerm*eightBitInput: false
+UXTerm*selectToClipboard: true
+
+#include ".Xresources.d/solarized"
