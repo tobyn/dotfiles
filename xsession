@@ -1,9 +1,5 @@
 #!/bin/bash
 
-FEHBG="$HOME/.fehbg"
-
-if [ -e "$FEHBG" ]; then
-  sh "$FEHBG"
-fi
+[ -x "$HOME/.fehbg" ] && "$HOME/.fehbg"
 
 exec i3
