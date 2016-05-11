@@ -9,8 +9,9 @@ ln -sf $dotfiles/bash_profile ~/.bash_profile
 ln -sf $dotfiles/bash_logout ~/.bash_logout
 
 mkdir -p ~/.local/share
-rm -rf ~/.local/share/fonts
+rm -rf ~/.local/share/fonts ~/.fonts.conf
 ln -sf $dotfiles/fonts ~/.local/share/fonts
+ln -sf $dotfiles/fonts.conf ~/.fonts.conf
 
 rm -rf ~/.gitconfig ~/.gitignore
 ln -sf $dotfiles/gitconfig ~/.gitconfig
