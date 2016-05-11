@@ -43,9 +43,13 @@ alias ll='ls -lF'
 alias lla='ls -lFA'
 alias la='ls -FA'
 
+export LANG=C LC_ALL=C
+
 SOFTWARE="$HOME/Software"
 export PATH="$SOFTWARE/bin:$PATH"
 
 # Tell n where to install node
 export PREFIX="$SOFTWARE"
 export N_PREFIX="$SOFTWARE"
+
+[ -r "$HOME/.bash_local" ] && . "$HOME/.bash_local"
