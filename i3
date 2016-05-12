@@ -6,6 +6,8 @@ set $mod Mod4
 new_window pixel
 focus_follows_mouse no
 
+font pango:sans Bold 11
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
