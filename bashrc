@@ -1,9 +1,3 @@
-# If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
-
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -45,7 +39,7 @@ alias la='ls -FA'
 
 export LANG=C LC_ALL=C
 
-SOFTWARE="$HOME/Software"
+export SOFTWARE="$HOME/Software"
 export PATH="$SOFTWARE/bin:$PATH"
 
 # Tell n where to install node
