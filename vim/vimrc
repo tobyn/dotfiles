@@ -18,11 +18,7 @@ let mapleader = ","
 
 let g:ctrlp_working_path_mode = 'ra'
 " show CtrlP
-nnoremap <Leader>o :CtrlP
+nmap <Leader>o :CtrlP<CR>
 
-
-" html tag helpers
-" C-t = html -> <html></html>
-inoremap <C-t> diwa<pa></pa>F<i
-" C-n = html -> <html>\n</html>
-inoremap <C-n> diwa<pa></pa>O<Tab>
+autocmd FileType html,css imap <buffer> <expr> <Tab>
+  \ emmet#expandAbbrIntelligent("\<Tab>")
