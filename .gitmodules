@@ -22,3 +22,9 @@
 [submodule "vim/bundle/easymotion"]
 	path = vim/bundle/easymotion
 	url = https://github.com/easymotion/vim-easymotion
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/gitgutter"]
+	path = vim/bundle/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
