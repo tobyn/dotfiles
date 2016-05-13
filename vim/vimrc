@@ -3,7 +3,7 @@ call pathogen#infect()
 
 set nocompatible
 syntax on
-filetype plugin on
+filetype plugin indent on
 
 set bs=2
 set laststatus=2 ruler
@@ -16,11 +16,6 @@ set wildignore=bower_components,node_modules,target
 
 let mapleader = ","
 
-
-" open tag under cursor in a new vertical split
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
-
 let g:ctrlp_working_path_mode = 'ra'
 " show CtrlP
 nnoremap <Leader>o :CtrlP
@@ -31,6 +26,3 @@ nnoremap <Leader>o :CtrlP
 inoremap <C-t> diwa<pa></pa>F<i
 " C-n = html -> <html>\n</html>
 inoremap <C-n> diwa<pa></pa>O<Tab>
-
-
-au BufRead,BufNewFile *.py set ts=2 sw=2 sts=2 et
