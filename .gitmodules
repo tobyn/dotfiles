@@ -40,3 +40,9 @@
 [submodule "vim/bundle/emmet"]
 	path = vim/bundle/emmet
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "vim/bundle/javascript"]
+	path = vim/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/node"]
+	path = vim/bundle/node
+	url = https://github.com/mmalecki/vim-node.js.git
