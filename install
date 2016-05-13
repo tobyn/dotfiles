@@ -21,10 +21,6 @@ mkdir -p ~/.config/i3
 rm -rf ~/.config/i3/config
 ln -sf $dotfiles/i3 ~/.config/i3/config
 
-rm -rf ~/.vim
-ln -sf $dotfiles/vim ~/.vim
-$dotfiles/vim/install
-
 rm -rf ~/.Xresources ~/.Xresources.d ~/.xsession
 ln -sf $dotfiles/Xresources ~/.Xresources
 ln -sf $dotfiles/Xresources.d ~/.Xresources.d
