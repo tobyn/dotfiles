@@ -16,7 +16,7 @@ font pango:sans Bold 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+space exec i3-sensible-terminal
 
 # start dmenu (a program launcher)
 bindsym Ctrl+space exec dmenu_run -fn 'Source Code Pro:pixelsize=16' \
