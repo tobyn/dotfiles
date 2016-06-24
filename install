@@ -25,3 +25,5 @@ rm -rf ~/.Xresources ~/.Xresources.d ~/.xsession
 ln -sf $dotfiles/Xresources ~/.Xresources
 ln -sf $dotfiles/Xresources.d ~/.Xresources.d
 ln -sf $dotfiles/xsession ~/.xsession
+
+ln -sf $dotfiles/tern_config ~/.tern_config
