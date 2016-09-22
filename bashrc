@@ -37,8 +37,6 @@ alias ll='ls -lF'
 alias lla='ls -lFA'
 alias la='ls -FA'
 
-export LANG=C LC_ALL=C
-
 export SOFTWARE="$HOME/Software"
 export PATH="$SOFTWARE/bin:$PATH"
 
